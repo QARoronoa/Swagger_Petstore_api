@@ -24,8 +24,8 @@ def test_add_new_pet():
         response = requests.post(url, json=payload)
 
         #allure attach
-        allure.attach(response.text)
-        allure.attach(str(response.status_code))
+        allure.attach(response.text,name="Réponse API")
+        allure.attach(str(response.status_code), name="Code HTTP")
 
         response_body = response.json()
         print_json(data=response_body)
