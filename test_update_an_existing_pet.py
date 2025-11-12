@@ -34,7 +34,7 @@ def test_update_existingPet():
     with allure.step("Appel PUT/update pet"):
         response = requests.put(url, json=payload)
 
-        allure.attach(response.status_code, name= "code HTTP")
+        allure.attach(str(response.status_code), name= "Code HTTP")
         allure.attach(response.text, name="Réponse API")
 
         responseBody = response.json()
