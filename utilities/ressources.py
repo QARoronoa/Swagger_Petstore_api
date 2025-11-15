@@ -4,3 +4,4 @@ class apiRessources :
       addPet = "/pet"
       updatePet = "/pet"
       statusPet = "/pet/findByStatus"
+      findpetId = "/pet/{petId}"
