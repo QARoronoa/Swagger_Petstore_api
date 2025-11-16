@@ -5,3 +5,4 @@ class apiRessources :
       updatePet = "/pet"
       statusPet = "/pet/findByStatus"
       findpetId = "/pet/{petId}"
+      storeInventory = "/store/inventory"
