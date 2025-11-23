@@ -6,3 +6,8 @@ class apiRessources :
       statusPet = "/pet/findByStatus"
       findpetId = "/pet/{petId}"
       storeInventory = "/store/inventory"
+
+
+class store :
+      petInventory = '/store/invntory'
+      petOrder = '/store/order'
