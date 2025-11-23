@@ -11,3 +11,4 @@ class apiRessources :
 class store :
       petInventory = '/store/invntory'
       petOrder = '/store/order'
+      orderById = "/store/order/{orderID}"
