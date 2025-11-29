@@ -12,3 +12,6 @@ class store :
       petInventory = '/store/invntory'
       petOrder = '/store/order'
       orderById = "/store/order/{orderID}"
+
+class user :
+      creat_list_users = "/user/createWithList"
