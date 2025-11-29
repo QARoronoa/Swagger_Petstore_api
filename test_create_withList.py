@@ -11,7 +11,7 @@ url = f"{base}{user.creat_list_users}"
 data = [
   {
     "id": 0,
-    "username": "string",
+    "username": "UssopSama",
     "firstName": "string",
     "lastName": "string",
     "email": "string",

@@ -15,3 +15,4 @@ class store :
 
 class user :
       creat_list_users = "/user/createWithList"
+      get_user_by_name = "/user/{username}"
