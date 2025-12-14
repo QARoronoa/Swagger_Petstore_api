@@ -8,10 +8,11 @@ from utilities.configuration import *
 config = config()
 base = config['API']['base_url']
 username = "UssopSama3"
+
 url = f"{base}{user.get_user_by_name}"
-json = {
+data = {
   "id": 0,
-  "username": "UssopSama2",
+  "username": username,
   "firstName": "string",
   "lastName": "string",
   "email": "string",
@@ -20,14 +21,15 @@ json = {
   "userStatus": 0
 }
 
-def test_upload_user():
-    with allure.step("upload an user"):
-        response = requests.put(url.format(username=username), json=json)
+def test_updated_user_by_userName():
+    with allure.step("update user by name"):
+        response = requests.put(url.format(username=username),
+                                json=data)
 
         assert response.status_code == 200
 
         body = response.json()
         print_json(data=body)
 
-        allure.attach(response.text, "response API")
-        allure.attach(str(response.status_code), "Code HTTP")
+        allure.attach(str(response.status_code), "HTTP CODE")
+        allure.attach(response.text, "Response API")
