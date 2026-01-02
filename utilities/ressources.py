@@ -18,3 +18,5 @@ class user :
       get_user_by_name = "/user/{username}"
       user_login = "/user/login"
       user_logout = "/user/logout"
+      user_create_list = "/user/createWithArray"
+      create_user = "/user"
